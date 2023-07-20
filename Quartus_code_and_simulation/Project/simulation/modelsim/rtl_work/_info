@@ -1,0 +1,974 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/study/Projects/CPU/Quartus_code_and_simulation/Project/simulation/modelsim
+Eadder1
+Z1 w1683387714
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z7 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/adder1.vhdl
+Z8 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/adder1.vhdl
+l0
+Z9 L10 1
+VbIG?VNHYU[HCka6>5zQ3Y3
+!s100 15N08CW[9:73[OnSO`@M83
+Z10 OV;C;2020.1;71
+31
+Z11 !s110 1686228925
+!i10b 1
+Z12 !s108 1686228925.000000
+Z13 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/adder1.vhdl|
+Z14 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/adder1.vhdl|
+!i113 1
+Z15 o-93 -work work
+Z16 tExplicit 1 CvgOpt 0
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 6 adder1 0 22 bIG?VNHYU[HCka6>5zQ3Y3
+!i122 1
+l42
+L17 36
+V1kkYoEQZL51zI9<bfoJ]h3
+!s100 Lg<M25QbA=SU?aB2;Y4h20
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ealu2
+Z17 w1683387715
+R2
+R3
+R4
+R5
+R6
+!i122 14
+R0
+Z18 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/alu2.vhd
+Z19 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/alu2.vhd
+l0
+R9
+VV[D7Lo84RXWFmO9bdWfIn3
+!s100 <L:AW;^<;dm@92E9J<Z723
+R10
+31
+Z20 !s110 1686228928
+!i10b 1
+Z21 !s108 1686228928.000000
+Z22 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/alu2.vhd|
+Z23 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/alu2.vhd|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 4 alu2 0 22 V[D7Lo84RXWFmO9bdWfIn3
+!i122 14
+l129
+L25 162
+VdYKnDn0I43^ckKS3=chlW2
+!s100 NGoKJ74N]zhA[dABkJ3cf0
+R10
+31
+R20
+!i10b 1
+R21
+R22
+R23
+!i113 1
+R15
+R16
+Ecache
+Z24 w1684611558
+R2
+R3
+R4
+R5
+R6
+!i122 18
+R0
+Z25 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/cache.vhdl
+Z26 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/cache.vhdl
+l0
+R9
+Vj`mO17GLhVbB<<Zz`9>f`1
+!s100 aN@elTPnYSMIjDgk;zl^n0
+R10
+31
+Z27 !s110 1686228929
+!i10b 1
+Z28 !s108 1686228929.000000
+Z29 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/cache.vhdl|
+Z30 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/cache.vhdl|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 cache 0 22 j`mO17GLhVbB<<Zz`9>f`1
+!i122 18
+l84
+L27 116
+V5hJBFa>XYYWkFZlEDGC`l3
+!s100 XTCGzjbVYXKjX@=2TiBh23
+R10
+31
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R15
+R16
+Ecomplimentor
+Z31 w1683387716
+R2
+R3
+R4
+R5
+R6
+!i122 17
+R0
+Z32 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/complimentor.vhdl
+Z33 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/complimentor.vhdl
+l0
+R9
+VzXjCjZN4Q=Q^1V0B]3?JL3
+!s100 NVX;fnazhAQ_b4d<kjhCA0
+R10
+31
+R27
+!i10b 1
+R28
+Z34 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/complimentor.vhdl|
+Z35 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/complimentor.vhdl|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 12 complimentor 0 22 zXjCjZN4Q=Q^1V0B]3?JL3
+!i122 17
+l24
+L20 26
+VoXg:oiShGJ2eYWkKW1[4m0
+!s100 lcn8@I^4GAl9b63JYmf>O2
+R10
+31
+R27
+!i10b 1
+R28
+R34
+R35
+!i113 1
+R15
+R16
+Econtroller
+Z36 w1683456156
+R2
+R3
+R4
+R5
+R6
+!i122 15
+R0
+Z37 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/contorller.vhdl
+Z38 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/contorller.vhdl
+l0
+R9
+VTC4XQiblCJ2^hOi?J:TY:1
+!s100 3Fi1;3K[VlcIQHQIonKKX3
+R10
+31
+R20
+!i10b 1
+R21
+Z39 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/contorller.vhdl|
+Z40 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/contorller.vhdl|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 10 controller 0 22 TC4XQiblCJ2^hOi?J:TY:1
+!i122 15
+l91
+L34 201
+VmFV3S7XPNbImO=hP<>oY^2
+!s100 L9lU<Q3C^:MAPnD6KlV?^0
+R10
+31
+R20
+!i10b 1
+R21
+R39
+R40
+!i113 1
+R15
+R16
+Econverter
+Z41 w1683387717
+R2
+R3
+R4
+R5
+R6
+!i122 0
+R0
+Z42 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/converter.vhdl
+Z43 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/converter.vhdl
+l0
+R9
+Vk_51V9j87IXA?=6Qc_Ed^2
+!s100 b<ZkFSd9=KIiR7f;0U86^1
+R10
+31
+R11
+!i10b 1
+Z44 !s108 1686228924.000000
+Z45 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/converter.vhdl|
+Z46 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/converter.vhdl|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 9 converter 0 22 k_51V9j87IXA?=6Qc_Ed^2
+!i122 0
+l88
+L20 146
+VYoSK:i7d;PTi`FSWAHWlW2
+!s100 ^e4a530Oj:i^dk_]61THD2
+R10
+31
+R11
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R15
+R16
+Ecz
+Z47 w1683387718
+R2
+R3
+R4
+R5
+R6
+!i122 16
+R0
+Z48 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/cz.vhdl
+Z49 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/cz.vhdl
+l0
+R9
+VMEYko`Qcfk2Cdg^oBWZQF2
+!s100 STe7@L[jHLIS3GQiCOGDK0
+R10
+31
+R20
+!i10b 1
+R21
+Z50 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/cz.vhdl|
+Z51 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/cz.vhdl|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 2 cz 0 22 MEYko`Qcfk2Cdg^oBWZQF2
+!i122 16
+l26
+L21 38
+VDfz69QzL?:GGe?hGDRU9Z1
+!s100 ZPQ?=k26EX]Cz32=UP9K>2
+R10
+31
+R20
+!i10b 1
+R21
+R50
+R51
+!i113 1
+R15
+R16
+Edatapath
+Z52 w1684611586
+R2
+R3
+R4
+R5
+R6
+!i122 13
+R0
+Z53 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/datapath.vhdl
+Z54 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/datapath.vhdl
+l0
+R9
+VN@Eb1RIkMOE=YB^[ON7mK2
+!s100 XSTMa04nAfYTPdUg19]9>0
+R10
+31
+R20
+!i10b 1
+R21
+Z55 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/datapath.vhdl|
+Z56 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/datapath.vhdl|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 8 datapath 0 22 N@Eb1RIkMOE=YB^[ON7mK2
+!i122 13
+l292
+L20 300
+V<?gd?QVWPKj7G?08;Z@k;2
+!s100 Sk2=IMMziokbkb<i_Z`R50
+R10
+31
+R20
+!i10b 1
+R21
+R55
+R56
+!i113 1
+R15
+R16
+Edmem00
+Z57 w1684610736
+R2
+R3
+R4
+R5
+R6
+!i122 19
+R0
+Z58 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/dmem0.vhdl
+Z59 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/dmem0.vhdl
+l0
+R9
+V@iM79UZVC]Y6fOni^PSc70
+!s100 hSYIhhE11`][^1JJ3HG<e2
+R10
+31
+R27
+!i10b 1
+R28
+Z60 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/dmem0.vhdl|
+Z61 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/dmem0.vhdl|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 6 dmem00 0 22 @iM79UZVC]Y6fOni^PSc70
+!i122 19
+l49
+L21 57
+VoK8Az^l[ULDIW=kg0K8MH2
+!s100 5JfM@KijeKaa:N9CS;REM0
+R10
+31
+R27
+!i10b 1
+R28
+R60
+R61
+!i113 1
+R15
+R16
+Edut
+Z62 w1684570512
+R5
+R6
+!i122 2
+R0
+Z63 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/DUT.vhdl
+Z64 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/DUT.vhdl
+l0
+L7 1
+VYlk06<oJP964WV@[DX1[63
+!s100 X]>TYLNCA;;8`0Df8[A>Z0
+R10
+31
+R11
+!i10b 1
+R12
+Z65 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/DUT.vhdl|
+Z66 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/DUT.vhdl|
+!i113 1
+R15
+R16
+Adutwrap
+R5
+R6
+DEx4 work 3 dut 0 22 Ylk06<oJP964WV@[DX1[63
+!i122 2
+l26
+L14 27
+VYLX`HlR>i<[8@jhclW`3J0
+!s100 5omQV=_O]GL0CP:_`z7]<0
+R10
+31
+R11
+!i10b 1
+R12
+R65
+R66
+!i113 1
+R15
+R16
+Eexmem
+Z67 w1683453561
+R2
+R3
+R4
+R5
+R6
+!i122 11
+R0
+Z68 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/exmem.vhdl
+Z69 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/exmem.vhdl
+l0
+R9
+V6QSeNc0D[lV[T34[`Fji]1
+!s100 gYM4_7^lRnb^hbn1UAnQC3
+R10
+31
+R20
+!i10b 1
+R21
+Z70 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/exmem.vhdl|
+Z71 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/exmem.vhdl|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 exmem 0 22 6QSeNc0D[lV[T34[`Fji]1
+!i122 11
+l28
+Z72 L24 45
+VbhkZ[0NAkX9TXNUAf9>P]2
+!s100 g5]bPQIh<V1EI0<RRI1le2
+R10
+31
+R20
+!i10b 1
+R21
+R70
+R71
+!i113 1
+R15
+R16
+Eidrr
+Z73 w1683453261
+R2
+R3
+R4
+R5
+R6
+!i122 9
+R0
+Z74 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/idrr.vhdl
+Z75 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/idrr.vhdl
+l0
+R9
+V`DjN0]Zi2BK_h<6b;0e`D1
+!s100 cTQ@78TQ]l>mXUPVSN8jC1
+R10
+31
+Z76 !s110 1686228927
+!i10b 1
+Z77 !s108 1686228927.000000
+Z78 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/idrr.vhdl|
+Z79 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/idrr.vhdl|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 4 idrr 0 22 `DjN0]Zi2BK_h<6b;0e`D1
+!i122 9
+l28
+R72
+V<DoJ6OLaKGaB<N0o;Zcd?1
+!s100 h[zP2>j>:bWebL_>Um6_B3
+R10
+31
+R76
+!i10b 1
+R77
+R78
+R79
+!i113 1
+R15
+R16
+Eifid
+Z80 w1683453275
+R2
+R3
+R4
+R5
+R6
+!i122 8
+R0
+Z81 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/ifid.vhdl
+Z82 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/ifid.vhdl
+l0
+L12 1
+VUj@maX?<RRg?oT1keGUAT1
+!s100 z2nE6gFF53<Rh;LN5?XGH0
+R10
+31
+R76
+!i10b 1
+R77
+Z83 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/ifid.vhdl|
+Z84 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/ifid.vhdl|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 4 ifid 0 22 Uj@maX?<RRg?oT1keGUAT1
+!i122 8
+l31
+L26 48
+VFfP<7MZ5Pa8?AjBPf2m;23
+!s100 KC@68@[MmHPdWb4oAaX7C2
+R10
+31
+R76
+!i10b 1
+R77
+R83
+R84
+!i113 1
+R15
+R16
+Eimem
+Z85 w1686228775
+R2
+R3
+R4
+R5
+R6
+!i122 5
+R0
+Z86 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/imem.vhdl
+Z87 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/imem.vhdl
+l0
+R9
+VhkZ=YCKEgdDdJQI=kkoTb2
+!s100 3Pf?oN5U8`?73`WLDme?z1
+R10
+31
+Z88 !s110 1686228926
+!i10b 1
+R12
+Z89 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/imem.vhdl|
+Z90 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/imem.vhdl|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 4 imem 0 22 hkZ=YCKEgdDdJQI=kkoTb2
+!i122 5
+l67
+L17 56
+VQI`i6e[XI2HYnSh=7>;B33
+!s100 ``oZMNRU]MAOOLh^Nc3A?1
+R10
+31
+R88
+!i10b 1
+R12
+R89
+R90
+!i113 1
+R15
+R16
+Ememwb
+Z91 w1683387726
+R2
+R3
+R4
+R5
+R6
+!i122 12
+R0
+Z92 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/memwb.vhdl
+Z93 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/memwb.vhdl
+l0
+R9
+VRlacN;U`?^na5W]:Z5EM:1
+!s100 RVZ99[?F32B3LbA_>^EK10
+R10
+31
+R20
+!i10b 1
+R21
+Z94 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/memwb.vhdl|
+Z95 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/memwb.vhdl|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 5 memwb 0 22 RlacN;U`?^na5W]:Z5EM:1
+!i122 12
+l24
+L20 39
+VL_IQcfS9WRDJ7QWE[G5Mo2
+!s100 d`0=9^ZWD8iX4;3C>47843
+R10
+31
+R20
+!i10b 1
+R21
+R94
+R95
+!i113 1
+R15
+R16
+Epc
+Z96 w1683453296
+R2
+R3
+R4
+R5
+R6
+!i122 7
+R0
+Z97 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/pc.vhdl
+Z98 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/pc.vhdl
+l0
+R9
+VdTX_2`EZO0EPWJPR5L@0g1
+!s100 12]a5EM2I8CTbZ=^lXBoc2
+R10
+31
+R76
+!i10b 1
+R77
+Z99 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/pc.vhdl|
+Z100 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/pc.vhdl|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 2 pc 0 22 dTX_2`EZO0EPWJPR5L@0g1
+!i122 7
+l28
+L24 43
+V;:i[eb:Lj7lC_WHLUME^=2
+!s100 jUjB@GOP9[fI_MSBYkAEI1
+R10
+31
+R76
+!i10b 1
+R77
+R99
+R100
+!i113 1
+R15
+R16
+Eregisterfiles
+Z101 w1686228850
+R2
+R3
+R4
+R5
+R6
+!i122 6
+R0
+Z102 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/registerfiles.vhdl
+Z103 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/registerfiles.vhdl
+l0
+R9
+V`DHFF:TjaebKbiQjGBNCK3
+!s100 YiC[]iZ]][]L>9DaAG>BD2
+R10
+31
+R76
+!i10b 1
+R77
+Z104 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/registerfiles.vhdl|
+Z105 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/registerfiles.vhdl|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 13 registerfiles 0 22 `DHFF:TjaebKbiQjGBNCK3
+!i122 6
+l57
+L21 63
+VU^aWKGk2?YA>AGE`4MT[a1
+!s100 z6zJY]PI5l6d89z4I5SPX2
+R10
+31
+R76
+!i10b 1
+R77
+R104
+R105
+!i113 1
+R15
+R16
+Errex
+Z106 w1683455842
+R2
+R3
+R4
+R5
+R6
+!i122 10
+R0
+Z107 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/rrex.vhdl
+Z108 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/rrex.vhdl
+l0
+R9
+V[gNhb:jMXPFV@7Bk4<hIQ0
+!s100 zl@=Q0Bbk0cCi^Km0ATPE2
+R10
+31
+R20
+!i10b 1
+R21
+Z109 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/rrex.vhdl|
+Z110 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/rrex.vhdl|
+!i113 1
+R15
+R16
+Abeh
+R2
+R3
+R4
+R5
+R6
+DEx4 work 4 rrex 0 22 [gNhb:jMXPFV@7Bk4<hIQ0
+!i122 10
+l31
+L27 61
+VTLBBMVJ5=ZKW;1oDG:7bK2
+!s100 ac76Ibj;JMifEMN85AdPD0
+R10
+31
+R20
+!i10b 1
+R21
+R109
+R110
+!i113 1
+R15
+R16
+Ese10
+Z111 w1683387729
+R5
+R6
+!i122 3
+R0
+Z112 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/SE10.vhd
+Z113 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/SE10.vhd
+l0
+L4 1
+VVjE8bM@R@d^1ZOdN4QXKH1
+!s100 4E=92Sz2ecM]4j7MUhJjm3
+R10
+31
+R11
+!i10b 1
+R12
+Z114 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/SE10.vhd|
+Z115 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/SE10.vhd|
+!i113 1
+R15
+R16
+Abeh
+R5
+R6
+DEx4 work 4 se10 0 22 VjE8bM@R@d^1ZOdN4QXKH1
+!i122 3
+l16
+Z116 L11 25
+V64cbBFKODi5>c75@1OjLC1
+!s100 i>j?1;0ia4OWlLzN6gQX@0
+R10
+31
+R11
+!i10b 1
+R12
+R114
+R115
+!i113 1
+R15
+R16
+Ese7
+R111
+R5
+R6
+!i122 4
+R0
+Z117 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/SE7.vhd
+Z118 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/SE7.vhd
+l0
+L4 1
+V6NjUPGVSamLJl;j877Yga3
+!s100 eK@jV5z?0?I<SKTCf7JRH0
+R10
+31
+R11
+!i10b 1
+R12
+Z119 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/SE7.vhd|
+Z120 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/SE7.vhd|
+!i113 1
+R15
+R16
+Abeh
+R5
+R6
+DEx4 work 3 se7 0 22 6NjUPGVSamLJl;j877Yga3
+!i122 4
+l16
+R116
+V[gRcG5>lGl@CT0beP3?Q@0
+!s100 n9K<7THA:>:UJD?PKb3[T0
+R10
+31
+R11
+!i10b 1
+R12
+R119
+R120
+!i113 1
+R15
+R16
+Etestbench
+Z121 w1683387730
+R6
+R5
+!i122 20
+R0
+Z122 8D:/study/Projects/CPU/Quartus_code_and_simulation/Project/Testbench.vhdl
+Z123 FD:/study/Projects/CPU/Quartus_code_and_simulation/Project/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R10
+31
+R27
+!i10b 1
+R28
+Z124 !s90 -reportprogress|300|-93|-work|work|D:/study/Projects/CPU/Quartus_code_and_simulation/Project/Testbench.vhdl|
+!s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/Testbench.vhdl|
+!i113 1
+R15
+R16
+Abehave
+R6
+R5
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 20
+l69
+L9 132
+V5]`1]2B:OzHN`hh<]l:ec0
+!s100 egSm8NZn_bE^D`GlEeEgc1
+R10
+31
+R27
+!i10b 1
+R28
+R124
+Z125 !s107 D:/study/Projects/CPU/Quartus_code_and_simulation/Project/Testbench.vhdl|
+!i113 1
+R15
+R16

@@ -1,0 +1,459 @@
+Analysis & Elaboration report for EE309_Pipeline
+Tue Jun 27 17:29:10 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Analysis & Elaboration Settings
+  5. Port Connectivity Checks: "datapath:add_instance|cache:cache1"
+  6. Port Connectivity Checks: "datapath:add_instance|converter:converter1"
+  7. Analysis & Elaboration Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                   ;
++------------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status      ; Successful - Tue Jun 27 17:29:10 2023       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; EE309_Pipeline                              ;
+; Top-level Entity Name              ; DUT                                         ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
+; UFM blocks                         ; N/A until Partition Merge                   ;
+; ADC blocks                         ; N/A until Partition Merge                   ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                            ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M25SAE144C8G     ;                    ;
+; Top-level entity name                                            ; DUT                ; EE309_Pipeline     ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:add_instance|cache:cache1"                                                      ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; cachehit  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; cachemiss ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:add_instance|converter:converter1"                                                 ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; converterout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Tue Jun 27 17:28:59 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off EE309_Pipeline -c EE309_Pipeline --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file converter.vhdl
+    Info (12022): Found design unit 1: converter-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/converter.vhdl Line: 20
+    Info (12023): Found entity 1: converter File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/converter.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file adder1.vhdl
+    Info (12022): Found design unit 1: adder1-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/adder1.vhdl Line: 17
+    Info (12023): Found entity 1: adder1 File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/adder1.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file testbench.vhdl
+    Info (12022): Found design unit 1: Testbench-Behave File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/Testbench.vhdl Line: 9
+    Info (12023): Found entity 1: Testbench File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/Testbench.vhdl Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file dut.vhdl
+    Info (12022): Found design unit 1: DUT-DutWrap File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/DUT.vhdl Line: 14
+    Info (12023): Found entity 1: DUT File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/DUT.vhdl Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file se10.vhd
+    Info (12022): Found design unit 1: SE10-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/SE10.vhd Line: 11
+    Info (12023): Found entity 1: SE10 File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/SE10.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file se7.vhd
+    Info (12022): Found design unit 1: SE7-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/SE7.vhd Line: 11
+    Info (12023): Found entity 1: SE7 File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/SE7.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file imem.vhdl
+    Info (12022): Found design unit 1: imem-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/imem.vhdl Line: 17
+    Info (12023): Found entity 1: imem File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/imem.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file dmem.vhdl
+    Info (12022): Found design unit 1: dmem-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/dmem.vhdl Line: 22
+    Info (12023): Found entity 1: dmem File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/dmem.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file registerfiles.vhdl
+    Info (12022): Found design unit 1: registerfiles-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 21
+    Info (12023): Found entity 1: registerfiles File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file pc.vhdl
+    Info (12022): Found design unit 1: pc-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/pc.vhdl Line: 24
+    Info (12023): Found entity 1: pc File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/pc.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file ifid.vhdl
+    Info (12022): Found design unit 1: ifid-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/ifid.vhdl Line: 26
+    Info (12023): Found entity 1: ifid File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/ifid.vhdl Line: 12
+Info (12021): Found 2 design units, including 1 entities, in source file idrr.vhdl
+    Info (12022): Found design unit 1: idrr-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/idrr.vhdl Line: 24
+    Info (12023): Found entity 1: idrr File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/idrr.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file rrex.vhdl
+    Info (12022): Found design unit 1: rrex-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/rrex.vhdl Line: 27
+    Info (12023): Found entity 1: rrex File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/rrex.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file exmem.vhdl
+    Info (12022): Found design unit 1: exmem-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/exmem.vhdl Line: 24
+    Info (12023): Found entity 1: exmem File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/exmem.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file memwb.vhdl
+    Info (12022): Found design unit 1: memwb-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/memwb.vhdl Line: 20
+    Info (12023): Found entity 1: memwb File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/memwb.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file datapath.vhdl
+    Info (12022): Found design unit 1: datapath-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 20
+    Info (12023): Found entity 1: datapath File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file alu2.vhd
+    Info (12022): Found design unit 1: alu2-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 25
+    Info (12023): Found entity 1: alu2 File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file contorller.vhdl
+    Info (12022): Found design unit 1: controller-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/contorller.vhdl Line: 34
+    Info (12023): Found entity 1: controller File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/contorller.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file cz.vhdl
+    Info (12022): Found design unit 1: cz-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/cz.vhdl Line: 21
+    Info (12023): Found entity 1: cz File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/cz.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file complimentor.vhdl
+    Info (12022): Found design unit 1: complimentor-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/complimentor.vhdl Line: 20
+    Info (12023): Found entity 1: complimentor File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/complimentor.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file branchpredictor.vhdl
+    Info (12022): Found design unit 1: branchpredictor-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/branchpredictor.vhdl Line: 19
+    Info (12023): Found entity 1: branchpredictor File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/branchpredictor.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file cache.vhdl
+    Info (12022): Found design unit 1: cache-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/cache.vhdl Line: 27
+    Info (12023): Found entity 1: cache File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/cache.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file dmem0.vhdl
+    Info (12022): Found design unit 1: dmem00-beh File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/dmem0.vhdl Line: 21
+    Info (12023): Found entity 1: dmem00 File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/dmem0.vhdl Line: 10
+Info (12127): Elaborating entity "DUT" for the top level hierarchy
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:add_instance" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/DUT.vhdl Line: 30
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhdl(279): object "converterout" assigned a value but never read File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 279
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhdl(289): object "cachehit0" assigned a value but never read File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 289
+Warning (10036): Verilog HDL or VHDL warning at datapath.vhdl(290): object "cachemiss0" assigned a value but never read File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 290
+Info (12128): Elaborating entity "pc" for hierarchy "datapath:add_instance|pc:pc1" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 294
+Warning (10492): VHDL Process Statement warning at pc.vhdl(56): signal "pc1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/pc.vhdl Line: 56
+Info (12128): Elaborating entity "imem" for hierarchy "datapath:add_instance|imem:imem1" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 295
+Info (12128): Elaborating entity "adder1" for hierarchy "datapath:add_instance|adder1:adder11" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 296
+Warning (10540): VHDL Signal Declaration warning at adder1.vhdl(19): used explicit default value for signal "disp" because signal was never assigned a value File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/adder1.vhdl Line: 19
+Warning (10492): VHDL Process Statement warning at adder1.vhdl(48): signal "disp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/adder1.vhdl Line: 48
+Info (12128): Elaborating entity "converter" for hierarchy "datapath:add_instance|converter:converter1" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 297
+Warning (10492): VHDL Process Statement warning at converter.vhdl(151): signal "inst11" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/converter.vhdl Line: 151
+Warning (10492): VHDL Process Statement warning at converter.vhdl(152): signal "check11" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/converter.vhdl Line: 152
+Warning (10492): VHDL Process Statement warning at converter.vhdl(153): signal "counter" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/converter.vhdl Line: 153
+Warning (10492): VHDL Process Statement warning at converter.vhdl(154): signal "imm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/converter.vhdl Line: 154
+Warning (10492): VHDL Process Statement warning at converter.vhdl(155): signal "addr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/converter.vhdl Line: 155
+Info (12128): Elaborating entity "ifid" for hierarchy "datapath:add_instance|ifid:ifid1" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 298
+Warning (10492): VHDL Process Statement warning at ifid.vhdl(63): signal "reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/ifid.vhdl Line: 63
+Info (12128): Elaborating entity "SE7" for hierarchy "datapath:add_instance|SE7:se71" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 299
+Warning (10540): VHDL Signal Declaration warning at SE7.vhd(14): used explicit default value for signal "ones" because signal was never assigned a value File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/SE7.vhd Line: 14
+Warning (10492): VHDL Process Statement warning at SE7.vhd(27): signal "ones" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/SE7.vhd Line: 27
+Info (12128): Elaborating entity "SE10" for hierarchy "datapath:add_instance|SE10:se101" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 300
+Warning (10540): VHDL Signal Declaration warning at SE10.vhd(14): used explicit default value for signal "ones" because signal was never assigned a value File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/SE10.vhd Line: 14
+Warning (10492): VHDL Process Statement warning at SE10.vhd(27): signal "ones" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/SE10.vhd Line: 27
+Info (12128): Elaborating entity "idrr" for hierarchy "datapath:add_instance|idrr:idrr1" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 301
+Warning (10492): VHDL Process Statement warning at idrr.vhdl(58): signal "reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/idrr.vhdl Line: 58
+Info (12128): Elaborating entity "registerfiles" for hierarchy "datapath:add_instance|registerfiles:registerfiles1" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 302
+Warning (10631): VHDL Process Statement warning at registerfiles.vhdl(59): inferring latch(es) for signal or variable "RegisterF", which holds its previous value in one or more paths through the process File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][0]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][1]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][2]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][3]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][4]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][5]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][6]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][7]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][8]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][9]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][10]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][11]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][12]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][13]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][14]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[1][15]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][0]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][1]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][2]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][3]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][4]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][5]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][6]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][7]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][8]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][9]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][10]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][11]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][12]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][13]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][14]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[2][15]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][0]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][1]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][2]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][3]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][4]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][5]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][6]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][7]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][8]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][9]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][10]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][11]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][12]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][13]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][14]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[3][15]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][0]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][1]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][2]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][3]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][4]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][5]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][6]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][7]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][8]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][9]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][10]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][11]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][12]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][13]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][14]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[4][15]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][0]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][1]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][2]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][3]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][4]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][5]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][6]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][7]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][8]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][9]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][10]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][11]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][12]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][13]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][14]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[5][15]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][0]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][1]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][2]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][3]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][4]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][5]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][6]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][7]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][8]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][9]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][10]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][11]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][12]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][13]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][14]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[6][15]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][0]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][1]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][2]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][3]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][4]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][5]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][6]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][7]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][8]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][9]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][10]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][11]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][12]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][13]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][14]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (10041): Inferred latch for "RegisterF[7][15]" at registerfiles.vhdl(59) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/registerfiles.vhdl Line: 59
+Info (12128): Elaborating entity "rrex" for hierarchy "datapath:add_instance|rrex:rrex1" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 303
+Warning (10492): VHDL Process Statement warning at rrex.vhdl(77): signal "reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/rrex.vhdl Line: 77
+Info (12128): Elaborating entity "alu2" for hierarchy "datapath:add_instance|alu2:alu21" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 304
+Warning (10492): VHDL Process Statement warning at alu2.vhd(135): signal "dis" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 135
+Warning (10492): VHDL Process Statement warning at alu2.vhd(135): signal "dis0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 135
+Warning (10492): VHDL Process Statement warning at alu2.vhd(145): signal "carry1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 145
+Warning (10492): VHDL Process Statement warning at alu2.vhd(146): signal "carry1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 146
+Warning (10492): VHDL Process Statement warning at alu2.vhd(147): signal "carry1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 147
+Warning (10631): VHDL Process Statement warning at alu2.vhd(131): inferring latch(es) for signal or variable "alu2c1", which holds its previous value in one or more paths through the process File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Warning (10631): VHDL Process Statement warning at alu2.vhd(131): inferring latch(es) for signal or variable "carry1", which holds its previous value in one or more paths through the process File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Warning (10631): VHDL Process Statement warning at alu2.vhd(131): inferring latch(es) for signal or variable "zero1", which holds its previous value in one or more paths through the process File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "zero1" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "carry1" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[0]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[1]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[2]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[3]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[4]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[5]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[6]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[7]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[8]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[9]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[10]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[11]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[12]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[13]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[14]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (10041): Inferred latch for "alu2c1[15]" at alu2.vhd(131) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/alu2.vhd Line: 131
+Info (12128): Elaborating entity "controller" for hierarchy "datapath:add_instance|controller:controller1" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 305
+Warning (10036): Verilog HDL or VHDL warning at contorller.vhdl(39): object "wr21" assigned a value but never read File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/contorller.vhdl Line: 39
+Warning (10036): Verilog HDL or VHDL warning at contorller.vhdl(40): object "wr31" assigned a value but never read File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/contorller.vhdl Line: 40
+Info (12128): Elaborating entity "exmem" for hierarchy "datapath:add_instance|exmem:exmem1" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 306
+Warning (10492): VHDL Process Statement warning at exmem.vhdl(58): signal "reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/exmem.vhdl Line: 58
+Warning (10631): VHDL Process Statement warning at exmem.vhdl(30): inferring latch(es) for signal or variable "reg", which holds its previous value in one or more paths through the process File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/exmem.vhdl Line: 30
+Info (10041): Inferred latch for "reg[42]" at exmem.vhdl(30) File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/exmem.vhdl Line: 30
+Info (12128): Elaborating entity "memwb" for hierarchy "datapath:add_instance|memwb:memwb1" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 308
+Warning (10492): VHDL Process Statement warning at memwb.vhdl(48): signal "reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/memwb.vhdl Line: 48
+Info (12128): Elaborating entity "cz" for hierarchy "datapath:add_instance|cz:cz1" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 309
+Warning (10492): VHDL Process Statement warning at cz.vhdl(32): signal "rst" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/cz.vhdl Line: 32
+Warning (10492): VHDL Process Statement warning at cz.vhdl(46): signal "carry1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/cz.vhdl Line: 46
+Warning (10492): VHDL Process Statement warning at cz.vhdl(47): signal "zero1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/cz.vhdl Line: 47
+Info (12128): Elaborating entity "complimentor" for hierarchy "datapath:add_instance|complimentor:complimentor1" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 310
+Info (12128): Elaborating entity "dmem00" for hierarchy "datapath:add_instance|dmem00:dmem01" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 311
+Warning (10492): VHDL Process Statement warning at dmem0.vhdl(69): signal "Dout1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/dmem0.vhdl Line: 69
+Warning (10492): VHDL Process Statement warning at dmem0.vhdl(73): signal "Dout1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/dmem0.vhdl Line: 73
+Info (12128): Elaborating entity "cache" for hierarchy "datapath:add_instance|cache:cache1" File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/datapath.vhdl Line: 312
+Warning (10492): VHDL Process Statement warning at cache.vhdl(126): signal "wr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/cache.vhdl Line: 126
+Warning (10492): VHDL Process Statement warning at cache.vhdl(127): signal "Dout0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/cache.vhdl Line: 127
+Warning (10492): VHDL Process Statement warning at cache.vhdl(128): signal "Dataout0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/cache.vhdl Line: 128
+Warning (10492): VHDL Process Statement warning at cache.vhdl(129): signal "Dataaddr" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/study/Projects/Cache/Quartus_code_and_simulation/Project/cache.vhdl Line: 129
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 42 warnings
+    Info: Peak virtual memory: 4812 megabytes
+    Info: Processing ended: Tue Jun 27 17:29:10 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:12
+
+
