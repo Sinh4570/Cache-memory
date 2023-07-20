@@ -1,0 +1,21 @@
+library std;
+use std.standard.all;
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;	 
+use ieee.std_logic_unsigned.all;
+
+entity imem00 is
+port(
+pc: std_logic_vector(15 downto 0);
+instout: std_logic_vector(511 downto 0)
+);
+end imem00;
+
+architecture beh of imem00 is
+
+type mem is array(0 to 2**8 - 1) of std_logic_vector(15 downto 0); --64KB
+
+end beh;
