@@ -1,0 +1,5 @@
+lli r1, 1
+ada r3, r1, r2
+sw r3, r1, 1
+lw r4, r1, 1
+ada r1, r1, r4
